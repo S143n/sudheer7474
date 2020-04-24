@@ -1,0 +1,24 @@
+<H2 align="center" FONT color="ORANGE"> USER DETAILS </H2>
+<div>  
+ <form [formGroup]="userForm" (ngSubmit)="onFormSubmit()">
+  <div>
+    Name: <input formControlName="name"  placeholder="Enter Name"  required="NAME">
+  </div>
+ <div>
+    Email: 
+    <input type="email" id="email"   placeholder="email" required="">
+  </div>
+  <div>
+    NUMBER: <input type="text" name="mobile" pattern="[1-9]{1}[0-9]{9}"
+ title="Enter 10 digit mobile number" placeholder="Mobile number" required >
+  </div>
+
+  <div>
+    	
+    DOB:<input type="date" name="DOB"><br />
+    <button onclick="verify()">Submit</submit>
+      
+
+  </div>
+ </form>
+<div>
